@@ -11,8 +11,11 @@ There are two lines for the Find and Replace value, respectively.
 Example for creator field:
 
 Family name Given name E-mail ORCID Initials for Index 
+
 Match: Freisinger E 
-Replace: Freisinger Eva 
+
+Replace: Freisinger Eva
+
 
 The match value is matched exactly (only creators that have exactly "Freisinger" as 
 family name and "E" as given name are selected).
