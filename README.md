@@ -2,11 +2,16 @@
 ##Extended Batch Editing Tool that allows to Find and Replace on multiple compound fields
 
 The improved Batch Edit tool is an extension to the Batch Edit available in EPrints. 
+
 Its modifications are:
 
-- Applicable to all multiple value and compound fields (e.g. creators, languages, ...). 
-- Introduces a new Find and Replace value option as in word processors:
-There are two lines for the Find and Replace value, respectively. 
+- Two lines or columns are displayed: Match value and replace value.
+- All subfields available are displayed.
+- Fields to be replaced are matched exactly.
+- The position of the matched line in the multiple field remains unchanged. In other 
+words, if one does a find/replace in the creator fields, the order of creators in an 
+eprint is retained.
+
 
 Example for creator field:
 
@@ -16,12 +21,9 @@ Match: Freisinger E
 
 Replace: Freisinger Eva
 
-
 The match value is matched exactly (only creators that have exactly "Freisinger" as 
-family name and "E" as given name are selected).
-
-- The position of the matched line in the multiple field is retained. In other words, 
-the order of creators in an eprint is retained.
+family name and "E" as given name are selected, but not, e.g. "Freisinger 
+Elisabeth").
 
 
 Developed by Peter West on behalf of University of Zurich, Switzerland who have 
@@ -37,8 +39,7 @@ The setup procedure consists of the following steps
 
 ##Installation
 
-Copy the content of the bin and cfg directories to the respective 
-{eprints_root}/archives/{yourarchive}/bin and {eprints_root}/archives/{yourarchive}/cfg 
+Copy the content cfg directories to your {eprints_root}/archives/{yourarchive}/cfg 
 directories.
 
 
