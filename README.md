@@ -45,7 +45,35 @@ directories.
 
 ##Configuration
 
+Either insert the snippet provided in cfg.d/plugins_snippet.pl into your cfg.d/plugins.pl
+into the section "Plugin mapping", or rename the file, e.g. into 
+cfg.d/z_extended_batchedit.pl .
+
+Restart the web server to load the new configuration
+
 
 ##Use
+
+Login as a staff user first. Batch Edit is only available to users with administrative 
+rights. 
+
+Carry out an advanced search, e.g. for an author name. Note: Quick search using Xapian
+does not work with Batch Edit.
+
+In the results list, click on "Batch Edit". 
+
+In the Modify Records tab, choose e.g. the creators field from the dropdown menu. 
+Click the Add Change button.
+
+The creators sub-fields are displayed. Choose "Find and Replace value" from the dropdown
+menu. Two lines are shown. Enter the condition in the upper line, the replace value in
+the lower line.
+Example: 
+Find: Miller H
+Replace: Miller Henry
+
+Click button "Apply Changes". The author of all records of the result list found in the 
+search before will be replaced by "Miller Henry" if the name matches *exactly* "Miller H".
+
 
 
