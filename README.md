@@ -1,5 +1,5 @@
 # batchedit-extended
-##Extended Batch Editing Tool that allows to Find and Replace on multiple compound fields
+## Extended Batch Editing Tool that allows to Find and Replace on multiple compound fields
 
 The improved Batch Edit tool is an extension to the Batch Edit available in EPrints. 
 
@@ -29,7 +29,7 @@ Elisabeth").
 Developed by Peter West on behalf of University of Zurich, Switzerland who have 
 contributed this development to the E-Prints Community.
 
-##General setup
+## General setup
 
 The setup procedure consists of the following steps
 
@@ -37,13 +37,13 @@ The setup procedure consists of the following steps
 - Configuration
 
 
-##Installation
+## Installation
 
 Copy the content cfg directories to your {eprints_root}/archives/{yourarchive}/cfg 
 directories.
 
 
-##Configuration
+## Configuration
 
 Either insert the snippet provided in cfg.d/plugins_snippet.pl into your cfg.d/plugins.pl
 into the section "Plugin mapping", or rename the file, e.g. into 
@@ -52,7 +52,7 @@ cfg.d/z_extended_batchedit.pl .
 Restart the web server to load the new configuration
 
 
-##Use
+## Use
 
 Login as a staff user first. Batch Edit is only available to users with administrative 
 rights. 
