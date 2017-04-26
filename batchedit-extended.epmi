@@ -49,9 +49,9 @@
           <datasetid>document</datasetid>
           <filename>epm/batchedit-extended/cfg/cfg.d/z_batchedit_extended.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>e6b7a1db419f6c41a318e6ae313307e7</hash>
+          <hash>3d4d35787851411b192c4f542a446caf</hash>
           <hash_type>MD5</hash_type>
-          <filesize>296</filesize>
+          <filesize>300</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
@@ -70,7 +70,7 @@
       <id>you@email.address</id>
     </item>
   </creators>
-  <datestamp>2017-04-26 23:16:48</datestamp>
+  <datestamp>2017-04-26 23:21:05</datestamp>
   <title>batchedit-extended</title>
   <description>This is the description.</description>
   <requirements>The following modules are required: X, Y, Z</requirements>
