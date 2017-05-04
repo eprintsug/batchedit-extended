@@ -39,8 +39,14 @@ The setup procedure consists of the following steps
 
 ## Installation
 
-Copy the content cfg directories to your {eprints_root}/archives/{yourarchive}/cfg 
-directories.
+## As epmi
+
+run tools/epm enable batchedit-extended
+
+## Not as epmi
+
+Copy the contents of lib to the respective cfg directories to your {eprints_root}/archives/{yourarchive}/cfg 
+directory.
 
 
 ## Configuration
