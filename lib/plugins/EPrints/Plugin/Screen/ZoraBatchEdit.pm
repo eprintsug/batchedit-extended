@@ -20,7 +20,6 @@ use EPrints::Plugin::Screen;
 @ISA = ( 'EPrints::Plugin::Screen' );
 
 use strict;
-use Data::Dumper;
 
 sub new
 {
@@ -504,10 +503,6 @@ sub ajax_edit
 					my $values = [];
 					foreach my $o_val ( @$orig_value )
 					{
-#                        print STDERR "SEARCH: ".Dumper($value)."\n";
-#                        print STDERR "ORIGINAL: ".Dumper($o_val)."\n";
-#                        print STDERR "REPLACE: ".Dumper($replace)."\n";
-
 						if ( 0 == cmp_deeply($value, $o_val ) )
 						{
                             #instead of sticking in replace (user input) we want to stick in the difference between replace and dataobj
