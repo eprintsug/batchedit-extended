@@ -20,6 +20,7 @@ use EPrints::Plugin::Screen;
 @ISA = ( 'EPrints::Plugin::Screen' );
 
 use strict;
+use Data::Dumper;
 
 sub new
 {
@@ -231,7 +232,7 @@ sub ajax_add_change
 	my @options;
 	if( $field->get_property( "multiple" ) )
 	{
-		@options = qw( clear delete insert append findreplace );
+		@options = qw( clear delete insert append findreplace findreplace_ignoreblanks);
 	}
 	else
 	{
@@ -441,6 +442,7 @@ sub ajax_edit
 	my $modified_insert = 0;
 	my $modified_append = 0;
 	my $modified_findreplace = 0;
+	my $modified_findreplace_ignoreblanks = 0;
 	my $modified_replace = 0;
 
 	$list->map(sub {
@@ -497,6 +499,40 @@ sub ajax_edit
 					}
 					$field->set_value( $dataobj, $values );
 				}
+				elsif( $action eq "findreplace_ignoreblanks" )
+				{
+					my $values = [];
+					foreach my $o_val ( @$orig_value )
+					{
+#                        print STDERR "SEARCH: ".Dumper($value)."\n";
+#                        print STDERR "ORIGINAL: ".Dumper($o_val)."\n";
+#                        print STDERR "REPLACE: ".Dumper($replace)."\n";
+
+						if ( 0 == cmp_deeply($value, $o_val ) )
+						{
+                            #instead of sticking in replace (user input) we want to stick in the difference between replace and dataobj
+                            my $i=0;
+                            my $filtered_replace = {};
+                            for my $k (keys(%$o_val)){
+                                #We only replace a value if a value has been supplied in the replace form.
+                                if(EPrints::Utils::is_set($replace->{$k})){
+                                    $filtered_replace->{$k} = $replace->{$k};
+                                }else{
+                                    #Else we retain the original value
+                                    $filtered_replace->{$k} = $o_val->{$k};
+                                }
+                            }
+							push @$values, $filtered_replace;
+							$modified_findreplace_ignoreblanks++;
+						}
+						else
+						{
+							push @$values, $o_val;
+						}
+					}
+					$field->set_value( $dataobj, $values );
+				}
+
 			}
 			else
 			{
@@ -535,7 +571,7 @@ sub ajax_edit
 			$field->render_single_value( $session, $replace ) :
 			$session->html_phrase( "lib/metafield:unspecified" );
 	
-		if ( $action && $action eq "findreplace" )
+		if ( $action && ($action eq "findreplace" || $action eq "findreplace_ignoreblanks") )
 		{
 			$li->appendChild( $self->html_phrase( "applied_$action",
 				value => $session->make_text( EPrints::Utils::tree_to_utf8( $value ) ),
@@ -559,6 +595,7 @@ sub ajax_edit
                 insert=> $session->make_text( $modified_insert ),
                 append=> $session->make_text( $modified_append ),
                 findreplace=> $session->make_text( $modified_findreplace ),
+                findreplace_ignoreblanks=> $session->make_text( $modified_findreplace_ignoreblanks ),
                 replace=> $session->make_text( $modified_replace ),
                 count=> $session->make_text( $total )
         ) );
