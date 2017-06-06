@@ -9,9 +9,9 @@
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/z_zora_batch_edit.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>4becc807afb99ae7730031ce108f3cc4</hash>
+          <hash>8e0c0aea438ffeb8705c6e0f30b8774b</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4021</filesize>
+          <filesize>4480</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -25,9 +25,9 @@
           <datasetid>document</datasetid>
           <filename>static/javascript/auto/zora_screen_batchedit.js</filename>
           <mime_type>text/x-c++</mime_type>
-          <hash>139d6e924757cb97aba7e8240738e0c8</hash>
+          <hash>d90f47e9b0a1fe5da0c2ed29269262d5</hash>
           <hash_type>MD5</hash_type>
-          <filesize>755</filesize>
+          <filesize>855</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -41,9 +41,9 @@
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/ZoraBatchEdit.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>17f2e82f5165a3a8bff5370f62da371f</hash>
+          <hash>1daaff1cf6d7be5e406e1f46889d08b4</hash>
           <hash_type>MD5</hash_type>
-          <filesize>23901</filesize>
+          <filesize>25298</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -60,7 +60,7 @@
       <content>install</content>
     </document>
   </documents>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <creators>
     <item>
       <name>
@@ -70,7 +70,7 @@
       <id>you@email.address</id>
     </item>
   </creators>
-  <datestamp>2017-04-26 23:44:01</datestamp>
+  <datestamp>2017-06-06 20:48:20</datestamp>
   <title>batchedit-extended</title>
   <description>This is the description.</description>
   <requirements>The following modules are required: X, Y, Z</requirements>
