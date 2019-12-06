@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!DOCTYPE phrases SYSTEM "entities.dtd">
 
-<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase"
-  xmlns:epc="http://eprints.org/ep3/control">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
 
   <!-- Plugin/Screen/BatchEdit -->
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:title">Batch Editing Tool</epp:phrase>
@@ -10,10 +9,10 @@
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:action:add">Add Change</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:edit_title">Modify Records</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:remove_title">Remove all Records</epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:remove_help">Destroy all matching items. Once destroyed the items will be gone forever - this action <b>cannot be undone</b>!</epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:confirm_remove">Are you absolutely sure you want to destroy all these items (this action cannot be undone)?</epp:phrase>
-    <epp:phrase id="Plugin/Screen/ZoraBatchEdit:replace"><div style="float: left; margin-top: 16px; margin-right: 46px;">Replace value with: </div></epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:removed">Destroyed items.</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:remove_help">Destroy all matching items. Once destroyed the items will be gone <em>forever</em> - <b>this action cannot be undone</b>!</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:confirm_remove">Are you absolutely sure you want to destroy all these items (<b>this action cannot be undone</b>)?</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:replace"><div style="float: left; margin-top: 16px; margin-right: 46px;">Replace value with: </div></epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:removed">Destroyed items</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:">Don't change</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:clear">Clear all values</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:delete">Delete value matching</epp:phrase>
@@ -23,7 +22,7 @@
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:findreplace">Find and Replace value</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:findreplace_ignoreblanks">Find and Replace value (retain original if blank)</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:invalid_cache">The search expression could not be found - you will need to re-do your search and start again.</epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:no_changes">You attempted to apply some changes but didn't specify any actions to take?</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:no_changes">You attempted to apply some changes, but didn't specify any actions to take?</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied">The following changes were made: <epc:pin name="changes"/></epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_clear">Cleared existing value(s) from <em><epc:pin name="fieldname"/></em>.</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_delete">Deleted existing value from <em><epc:pin name="fieldname"/></em> matching "<epc:pin name="value"/>".</epp:phrase>
