@@ -419,6 +419,7 @@ sub ajax_edit
 	my $request = $session->get_request;
 
 	$request->content_type( "text/html; charset=UTF-8" );
+	binmode(STDOUT, ":utf8");
 	my $html = $session->make_element( "html" );
 	my $body = $html->appendChild( $session->make_element( "body" ) );
 
@@ -647,6 +648,7 @@ sub ajax_remove
 
 	$progress->remove;
 
+	binmode(STDOUT, ":utf8");
 	print $session->xhtml->to_xhtml( $html );
 	$session->xml->dispose( $html );
 }
