@@ -21,14 +21,14 @@
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:append">Neuen Wert anfügen</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:replace">Wert ersetzen mit</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:findreplace">Wert finden und ersetzen</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:findreplace_ignoreblanks">Wert finden und ersetzen (Original beibehalten falls leer)</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:invalid_cache">Die Suchanfrage lieferte keine Ergebnisse -
     Verändern Sie Ihre Suchanfrage und versuchen Sie es erneut.</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:no_changes">Sie wollten Änderungen vornehmen, haben aber
     keine passenden Aktionen gefunden?</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied">Die folgenden Änderungen wurden durchgeführt: <epc:pin name="changes"/></epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_clear">Wert(e) aus <em><epc:pin name="fieldname"/></em> wurde(n) gelöscht.</epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_delete">Wert aus <em><epc:pin name="fieldname"
-      /></em>, welcher auf "<epc:pin name="value"/>" passt, wurde gelöscht.</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_delete">Wert aus <em><epc:pin name="fieldname"/></em>, welcher auf "<epc:pin name="value"/>" passt, wurde gelöscht.</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_insert">"<epc:pin name="value"/>" wurde in
         <em><epc:pin name="fieldname"/></em> eingefügt.</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_append">"<epc:pin name="value"/>" wurde an
@@ -36,9 +36,9 @@
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_replace">Vorhandener Wert in <em><epc:pin
         name="fieldname"/></em> wurde ersetzt durch "<epc:pin name="value"/>".</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_findreplace">Vorhandener Wert "<epc:pin name="value"/>" wurde im Feld <em><epc:pin name="fieldname"/></em> ersetzt durch "<epc:pin name="replace"/>".</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_findreplace_ignoreblanks" ref="Plugin/Screen/ZoraBatchEdit:applied_findreplace" />
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applying_to">Änderungen werden durchgeführt an <epc:pin
       name="count"/> Datensätzen (nur die ersten <epc:pin name="showing"/> werden angezeigt):</epp:phrase>
   <epp:phrase id="eprint_fieldname_batchedit_remove" />
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:Summary">Zusammenfassung: Zurückgesetzt: <epc:pin name="clear" />  Gelöscht: <epc:pin name="delete" /> Eingefügt: <epc:pin name="insert" /> Angefügt: <epc:pin name="append" /> Suchen/Ersetzen: <epc:pin name="findreplace" /> Ersetzt:  <epc:pin name="replace" /> von ingesamt: <epc:pin name="count" /></epp:phrase>
-
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:Summary">Zusammenfassung: Zurückgesetzt: <epc:pin name="clear" />  Gelöscht: <epc:pin name="delete" />  Eingefügt: <epc:pin name="insert" />  Angefügt: <epc:pin name="append" />  Suchen/Ersetzen: <epc:pin name="findreplace" />  Suchen/Ersetzen (Original beibehalten falls leer): <epc:pin name="findreplace_ignoreblanks" />  Ersetzt: <epc:pin name="replace" />  von ingesamt: <epc:pin name="count" /></epp:phrase>
 </epp:phrases>
