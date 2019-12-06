@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!DOCTYPE phrases SYSTEM "entities.dtd">
 
-<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase"
-  xmlns:epc="http://eprints.org/ep3/control">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
 
   <!-- Plugin/Screen/BatchEdit -->
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:title">Batch Editing Tool</epp:phrase>
@@ -10,12 +9,11 @@
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:action:add">Änderung hinzufügen</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:edit_title">Datensätze bearbeiten</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:remove_title">Alle Datensätze löschen</epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:remove_help">Alle gefundenen Datensätze löschen. Die Datensätze
-    werden endgültig gelöscht. Das <b>kann nicht rückgängig gemacht werden</b>!</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:remove_help">Alle gefundenen Datensätze <b>endgültig</b> löschen. <b>Das kann nicht rückgängig gemacht werden</b>!</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:confirm_remove">Sind Sie sich sicher, dass Sie alle
-    Datensätze löschen möchten (das Löschen kann nicht rückgängig gemacht werden)?</epp:phrase>
-    <epp:phrase id="Plugin/Screen/ZoraBatchEdit:replace"><div style="float: left; margin-top: 16px; margin-right: 46px;">Wert ersetzen mit: </div></epp:phrase>
-  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:removed">Gelöschte Datensätze.</epp:phrase>
+    Datensätze <b>endgültig</b> löschen möchten (das Löschen kann nicht rückgängig gemacht werden)?</epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:replace"><div style="float: left; margin-top: 16px; margin-right: 46px;">Wert ersetzen mit: </div></epp:phrase>
+  <epp:phrase id="Plugin/Screen/ZoraBatchEdit:removed">Gelöschte Datensätze</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:">Nicht ändern</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:clear">Alle Werte zurücksetzen</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:actionopt:delete">Passenden Wert löschen</epp:phrase>
@@ -39,7 +37,7 @@
         name="fieldname"/></em> wurde ersetzt durch "<epc:pin name="value"/>".</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applied_findreplace">Vorhandener Wert "<epc:pin name="value"/>" wurde im Feld <em><epc:pin name="fieldname"/></em> ersetzt durch "<epc:pin name="replace"/>".</epp:phrase>
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:applying_to">Änderungen werden durchgeführt an <epc:pin
-      name="count"/> Datensätzen (nur der erste <epc:pin name="showing"/> wird angezeigt):</epp:phrase>
+      name="count"/> Datensätzen (nur die ersten <epc:pin name="showing"/> werden angezeigt):</epp:phrase>
   <epp:phrase id="eprint_fieldname_batchedit_remove" />
   <epp:phrase id="Plugin/Screen/ZoraBatchEdit:Summary">Zusammenfassung: Zurückgesetzt: <epc:pin name="clear" />  Gelöscht: <epc:pin name="delete" /> Eingefügt: <epc:pin name="insert" /> Angefügt: <epc:pin name="append" /> Suchen/Ersetzen: <epc:pin name="findreplace" /> Ersetzt:  <epc:pin name="replace" /> von ingesamt: <epc:pin name="count" /></epp:phrase>
 
