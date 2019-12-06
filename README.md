@@ -15,15 +15,14 @@ eprint is retained.
 
 Example for creator field:
 
-Family name Given name E-mail ORCID Initials for Index 
+Family name  Given name
 
-Match: Freisinger E 
+_Match_: `Freisinger E`
 
-Replace: Freisinger Eva
+_Replace_: `Freisinger Eva`
 
-The match value is matched exactly (only creators that have exactly "Freisinger" as 
-family name and "E" as given name are selected, but not, e.g. "Freisinger 
-Elisabeth").
+The match value is matched exactly (only creators that have exactly `Freisinger` as 
+family name and `E` as given name are selected, but not, e.g. `Freisinger Elisabeth`).
 
 
 Developed by Peter West on behalf of University of Zurich, Switzerland who have 
@@ -41,19 +40,18 @@ The setup procedure consists of the following steps
 
 ## As epmi
 
-run tools/epm enable batchedit-extended
+run `tools/epm enable batchedit-extended`
 
 ## Not as epmi
 
-Copy the contents of lib to the respective cfg directories to your {eprints_root}/archives/{yourarchive}/cfg 
-directory.
+Copy the contents of `lib` to the `cfg` directory of your `{eprints_root}/archives/{yourarchive}/cfg` 
+directory, i.e. `cd lib; cp -r * {eprints_root}/archives/{yourarchive}/cfg`
 
 
 ## Configuration
 
-Either insert the snippet provided in cfg.d/plugins_snippet.pl into your cfg.d/plugins.pl
-into the section "Plugin mapping", or rename the file, e.g. into 
-cfg.d/z_extended_batchedit.pl .
+Either insert the snippet provided in `cfg/cfg.d/z_extended_batchedit.pl` into your `cfg.d/plugins.pl`
+into the section _Plugin mapping_, or just copy the file into `{eprints_root}/archives/{yourarchive}/cfg/cfg.d/`.
 
 Restart the web server to load the new configuration
 
@@ -63,23 +61,25 @@ Restart the web server to load the new configuration
 Login as a staff user first. Batch Edit is only available to users with administrative 
 rights. 
 
-Carry out an advanced search, e.g. for an author name. Note: Quick search using Xapian
-does not work with Batch Edit.
+Carry out an _advanced_ search, e.g. for an author name.
 
-In the results list, click on "Batch Edit". 
+**Note: _Quick search using Xapian_ does not work with Batch Edit!**
 
-In the Modify Records tab, choose e.g. the creators field from the dropdown menu. 
-Click the Add Change button.
+In the results list, click on _Batch Edit_. 
 
-The creators sub-fields are displayed. Choose "Find and Replace value" from the dropdown
+In the _Modify Records_ tab, choose e.g. the creators field from the dropdown menu. 
+Click the _Add Change_ button.
+
+The creators sub-fields are displayed. Choose _Find and Replace value_ from the dropdown
 menu. Two lines are shown. Enter the condition in the upper line, the replace value in
 the lower line.
-Example: 
-Find: Miller H
-Replace: Miller Henry
 
-Click button "Apply Changes". The author of all records of the result list found in the 
-search before will be replaced by "Miller Henry" if the name matches *exactly* "Miller H".
+Example: 
+_Find_: `Miller H`
+_Replace_: `Miller Henry`
+
+Click button _Apply Changes_. The author of all records of the result list found in the 
+search before will be replaced by `Miller Henry` if the name matches _exactly_ `Miller H`.
 
 
 
